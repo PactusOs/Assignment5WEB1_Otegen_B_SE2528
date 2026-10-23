@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Basics</a>
+      <a href="dom.html">DOM</a>
+      <a href="events.html">Events</a>
+      <a class="active" href="todo.html">To-Do</a>
+    </nav>
+  </header>
+  <main>
+    <h1>To-Do List</h1>
+    <section>
+      <h2>Interactive To-Do App</h2>
+      <form id="todoForm" class="actions">
+        <input id="taskInput" type="text" placeholder="New task" aria-label="New task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList" class="tasks"></ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Basics</a>
+      <a class="active" href="dom.html">DOM</a>
+      <a href="events.html">Events</a>
+      <a href="todo.html">To-Do</a>
+    </nav>
+  </header>
+  <main>
+    <h1>DOM</h1>
+    <section>
+      <h2>Changing Content</h2>
+      <p id="message">This is the original</p>
+      <button id="changeText">Change Text</button>
+    </section>
+    <section>
+      <h2>Changing Styles</h2>
+      <div id="styleBox" class="demo-box">This block changes style.</div>
+      <div class="actions">
+        <button id="changeColor">Change Background</button>
+        <button id="changeSize">Change Font</button>
+      </div>
+    </section>
+    <section>
+      <h2>Creating and Removing Elements</h2>
+      <div class="actions">
+        <button id="addItem">Add Item</button>
+        <button id="removeItem" class="secondary">Remove</button>
+      </div>
+      <ul id="itemList"></ul>
+    </section>
+  </main>
+</body>
+</html>

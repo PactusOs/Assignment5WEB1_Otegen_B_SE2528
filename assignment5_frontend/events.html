@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Basics</a>
+      <a href="dom.html">DOM</a>
+      <a class="active" href="events.html">Events</a>
+      <a href="todo.html">To-Do</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Events</h1>
+    <section>
+      <h2>Mouse Events</h2>
+      <div id="hoverBox" class="demo-box">Move mouse over this box.</div>
+    </section>
+    <section>
+      <h2>Keyboard Events</h2>
+      <label for="liveInput">Type something..</label>
+      <input id="liveInput" type="text" placeholder="Enter text">
+      <p>Current thing: <span id="liveOutput"></span></p>
+    </section>
+    <section>
+      <h2>Calculator</h2>
+      <div class="calculator">
+        <input id="firstNumber" type="number" step="any" placeholder="First number" aria-label="First number">
+        <select id="operation" aria-label="Operation">
+          <option value="+">+</option>
+          <option value="-">−</option>
+          <option value="*">×</option>
+          <option value="/">÷</option>
+        </select>
+        <input id="secondNumber" type="number" step="any" placeholder="Second number" aria-label="Second number">
+        <button id="calculate">Calculate</button>
+      </div>
+      <p id="result" role="status">Result: —</p>
+    </section>
+  </main>
+</body>
+</html>
